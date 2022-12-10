@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Behzod</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+  {% load static %}
+{% for post in posts %}
+<p>{{post.title}}</p>
+<img src="{{post.image.url}}">
+{% endfor %}
+</body>
+</html>
